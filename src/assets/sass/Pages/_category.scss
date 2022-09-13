@@ -1,0 +1,40 @@
+.category {
+  @include flex(start);
+  padding: 20px;
+ 
+  &__card-main {
+    padding: 10px 10px 20px 10px;
+    transition: 0.3 ease-in-out;
+     margin-bottom: 30px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 15px 0 rgb(41 61 88 / 10%);
+      .category__img {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__title {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__img-parent {
+    height: 220px;
+    width: 289px;
+    overflow: hidden;
+  }
+  &__img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+  }
+  .catPag{
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+  }
+}

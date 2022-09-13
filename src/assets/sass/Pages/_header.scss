@@ -1,0 +1,9 @@
+.header {
+  @include flex(space-between);
+  width: 1200px;
+  height: 96px;
+  padding: 24px 40px 24px 40px !important;
+  background-color: $color-white;
+
+
+}

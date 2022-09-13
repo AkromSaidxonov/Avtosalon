@@ -1,0 +1,15 @@
+@mixin bg {
+background-color: rgb(57, 55, 55);
+
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex($jc: flex-start) {
+  display: flex;
+  align-items: center;
+  justify-content: $jc;
+  flex-wrap: wrap;
+}

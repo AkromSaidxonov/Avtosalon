@@ -1,0 +1,14 @@
+.main {
+  padding-top: 82px;
+  &__title-icon {
+    font-size: 12px !important;
+  }
+  &__title {
+    font-weight: 400;
+    margin-bottom: 30px !important;
+  }
+  &__header {
+    @include flex(space-between);
+  }
+
+}

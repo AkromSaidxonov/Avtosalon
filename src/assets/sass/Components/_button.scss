@@ -1,0 +1,12 @@
+  .admin-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    gap: 8px;
+    background: #2a85ff;
+    border-radius: 12px;
+    color: $color-white;
+    cursor: pointer;
+  }

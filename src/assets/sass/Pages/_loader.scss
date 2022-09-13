@@ -1,0 +1,9 @@
+.loader{
+    width: 100%;
+    height: 100vh;
+    @include center;
+
+    &__gif{
+        margin-right: 25px;
+    }
+}

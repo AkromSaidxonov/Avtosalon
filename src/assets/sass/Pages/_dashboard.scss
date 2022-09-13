@@ -1,0 +1,197 @@
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  background-color: #e3e3e3 !important;
+  padding: 40px;
+}
+.dashboard__component {
+  width: 100%;
+  height: 655px;
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 12px;
+  gap: 32px;
+  position: relative;
+}
+.dashboard-buttons {
+  @include flex(space-between);
+  padding: 12px;
+  .left {
+    @include flex;
+    button {
+      width: 16px;
+      height: 32px;
+      background: #ffd88d;
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #1a1d1f;
+    }
+  }
+  .right {
+    @include flex;
+    .butleft {
+      margin-left: 32px;
+    }
+  }
+}
+.addcategory-buttons {
+  @include flex(space-between);
+  padding: 12px;
+  .left {
+    @include flex;
+    button {
+      width: 16px;
+      height: 32px;
+      background: #cabdff;
+      border-radius: 4px;
+      margin-right: 16px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.02em;
+      color: #1a1d1f;
+    }
+  }
+  .right {
+    width: 36px;
+    height: 36px;
+    color: #8a8989;
+    cursor: pointer;
+  }
+}
+.add {
+  @include flex(end);
+  margin-top: 40px;
+}
+.form {
+  @include flex(space-between);
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+  }
+  .name {
+    input,
+    select {
+      padding: 12px;
+      gap: 435px;
+      width: 548px;
+      height: 48px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+    textarea {
+      padding: 12px;
+      gap: 435px;
+      width: 548px;
+      height: 150px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+  }
+  .file {
+    position: relative;
+    .input {
+      input {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+      }
+      padding: 12px;
+      display: flex();
+      align-items: flex-start;
+      position: relative;
+      gap: 435px;
+      width: 548px;
+      height: 48px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+  }
+}
+.form_car {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
+  }
+  .name {
+    margin-bottom: 5px;
+    input,
+    select {
+      padding: 12px;
+      gap: 435px;
+      width: 530px;
+      height: 48px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+    textarea {
+      padding: 12px;
+      width: 530px;
+      height: 100px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+  }
+  .file {
+    position: relative;
+    .input {
+      input {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 50px;
+      }
+      padding: 12px;
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      margin-bottom: 5px;
+      gap: 435px;
+      width: 530px;
+      height: 48px;
+      background: #f4f4f4;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+  }
+}
+.addcar {
+  @include flex(end);
+  margin-top: 10px;
+}
+
+tr {
+  th {
+    margin-right: 24px;
+   
+  }
+}
