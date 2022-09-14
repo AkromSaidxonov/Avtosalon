@@ -14,7 +14,7 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import { toast } from "react-toastify";
 import UptodateCar from "./UptodateCar";
 
-function DashboardTable({ deleteCar, data, isLoading,  ord }) {
+function DashboardTable({ deleteCar, data, isLoading }) {
   const [open, setOpen] = useState(false);
   const [carID, setCarID] = useState("");
   const navigate = useNavigate();
@@ -61,7 +61,7 @@ function DashboardTable({ deleteCar, data, isLoading,  ord }) {
                   hover
                 >
                   <TableCell component="th" scope="row">
-                    {++ord}
+                    {++index}
                   </TableCell>
                   <TableCell align="right">{item.marka.name}</TableCell>
                   <TableCell align="right">{item.gearbok}</TableCell>

@@ -30,7 +30,7 @@ const style = {
   px: 4,
   pb: 3,
 };
-function CategoryTable({ deleteCategory, pag, setCatCount, ord }) {
+function CategoryTable({ deleteCategory, pag, setCatCount }) {
   const limit = "8"
   const { data = [], isLoading } = useGetAllCategoryQuery({
     id: pag,
@@ -91,7 +91,7 @@ function CategoryTable({ deleteCategory, pag, setCatCount, ord }) {
                   hover
                 >
                   <TableCell component="th" scope="row">
-                    {++ord}
+                    {++index}
                   </TableCell>
                   <TableCell align="right">{item.name}</TableCell>
                   <TableCell

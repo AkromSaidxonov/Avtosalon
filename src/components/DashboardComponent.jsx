@@ -9,22 +9,22 @@ import {
   useDeleteCarMutation,
 } from "../redux/queries/cars";
 
-
-
 function DashboardComponent() {
   const [pag, setPag] = useState(1);
   const [state, setState] = useState("mash");
-  const [ord, setOrd] = useState(0);
   const [catCount, setCatCount] = useState(8);
   const { data = [], isLoading } = useGetAllCarsQuery(pag);
   const total = parseInt(Math.ceil(data?.data?.total / 8));
   const [deleteCar] = useDeleteCarMutation();
   const [deleteCategory] = useDeleteCarMutation();
 
-  useEffect(() => {}, [data, state]);
+  useEffect(() => {
+
+  }, [data, state]);
   const onChange = (e) => {
     setPag(e);
-    setOrd(ord + 8)
+
+    
   };
   return (
     <div className="dashboard__component">
@@ -34,14 +34,14 @@ function DashboardComponent() {
           deleteCategory={deleteCategory}
           setCatCount={setCatCount}
           pag={pag}
-          ord={ord}
+
         />
       ) : (
         <DashboardTable
           deleteCar={deleteCar}
           data={data}
           isLoading={isLoading}
-          ord={ord}
+
         />
       )}
 
